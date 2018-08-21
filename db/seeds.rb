@@ -7,6 +7,9 @@ u.update_attributes({
   state:      "OH",
   bio:        "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed id est laborum.",
   fake:       false,
+  email:      "a@b.c",
+  password:   "qwerty",
+  password_confirmation: "qwerty",
 })
 
 u.save!
@@ -25,6 +28,9 @@ puts "Generating fake users\n"
     state:       Faker::Address.state_abbr,
     bio:         Faker::Lorem.paragraph,
     fake:        true,
+    email:       Faker::Internet.email,
+    password:    "qwerty",
+    password_confirmation:    "qwerty",
   })
 
 end
