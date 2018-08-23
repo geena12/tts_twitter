@@ -1,1 +1,30 @@
 @import "bootstrap";
+
+.message {
+  border: 1px solid grey;
+  padding: 10px;
+  margin-bottom: 15px;
+  background: aliceblue;
+  border-radius: 3px;
+}
+
+.message img{
+  float: left;
+  padding-right: 15px;
+}
+.menu{
+  background-color: black;
+}
+.menu li a{
+  color: white;
+}
+.message_time{
+  font-size: 10px;
+  font-weight: 700;
+  color: #8f8f94;
+}
+.user_profile{
+  background-color: #8080801f;
+  padding: 20px;
+  border-radius: 3px; 
+}

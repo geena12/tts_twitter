@@ -10,13 +10,13 @@
   </head>
 
   <body>
-    <ul>
-      <li><%= link_to "Timeline", timeline_path %></li>
-      <li><%= link_to "Users", users_path %></li>
+    <ul class="menu nav nav-pills nav-justified">
+      <li class="nav-link"><%= link_to "Timeline", timeline_path %></li>
+      <li class="nav-link"><%= link_to "Users", users_path %></li>
       <% if current_user  %>
-        <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+        <li class="nav-link"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
       <% else %>
-        <li><%= link_to "Sign In", new_user_session_path %> </li>
+        <li class="nav-link"><%= link_to "Sign In", new_user_session_path %> </li>
       <% end %>
     </ul>
     <div class="container">
